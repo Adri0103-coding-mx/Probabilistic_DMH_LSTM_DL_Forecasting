@@ -1,12 +1,9 @@
-# Probabilistic_DMH_LSTM_DL_Forecasting
-Official implementation of the DMH-LSTM framework for operational crude oil price forecasting. Features real-time walk-forward backtesting, Conformal Prediction for calibrated uncertainty, and gradient-based interpretability.
-
-# Project Overview
-This repository hosts the code for the DMH-LSTM (Direct Multi-Horizon Long Short-Term Memory) framework, a robust deep learning system designed for the operational forecasting of crude oil prices. Unlike standard "offline" models that often suffer from look-ahead bias, this framework implements a strict real-time operational pipeline. It is specifically engineered to handle the non-linearities and volatility of energy markets, providing not just point forecasts, but calibrated uncertainty intervals crucial for financial risk management.
-
 # DMH-LSTM: A Real-Time Probabilistic Framework for Operational Crude Oil Price Forecasting
 
 This repository provides the official Python implementation of the **DMH-LSTM** framework. This system is designed to bridge the gap between deep learning research and operational energy market requirements by ensuring a leakage-free, real-time forecasting pipeline.
+
+# Project Overview
+This repository hosts the code for the DMH-LSTM (Direct Multi-Horizon Long Short-Term Memory) framework, a robust deep learning system designed for the operational forecasting of crude oil prices. Unlike standard "offline" models that often suffer from look-ahead bias, this framework implements a strict real-time operational pipeline. It is specifically engineered to handle the non-linearities and volatility of energy markets, providing not just point forecasts, but calibrated uncertainty intervals crucial for financial risk management.
 
 ## 🚀 Key Features
 
