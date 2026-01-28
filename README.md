@@ -13,12 +13,35 @@ This repository hosts the code for the DMH-LSTM (Direct Multi-Horizon Long Short
 * **Model Interpretability:** Gradient-based **Saliency Maps** to visualize the impact of temporal lags on price direction.
 * **Financial Risk Assessment:** Evaluation beyond standard errors using **Value-at-Risk (VaR)** and **Expected Shortfall (ES)**.
 
-## 🛠️ Installation
+## 📊 Main Variable
+The analysis include the mexican oil price:
+- Mix Mexican Blend Price  
 
-```bash
-# Clone the repository
-git clone [https://github.com/yourusername/DMH-LSTM-Oil-Forecasting.git](https://github.com/yourusername/DMH-LSTM-Oil-Forecasting.git)
-cd DMH-LSTM-Oil-Forecasting
+All data were obtained from official sources (Bank of Mexico).
 
-# Install dependencies
-pip install -r requirements.txt
+---
+
+## 🧠 Reproducibility
+All scripts are modular and reproducible.  
+
+
+## 🧑‍💻 Main author
+**Juan Adrian Moreno Hernández**  
+Doctoral Program in Energy  
+Escuela Superior de Ingeniería Mecánica y Eléctrica (ESIME),  
+Instituto Politécnico Nacional (IPN), Mexico City.  
+
+---
+
+## 📚 Citation
+If you use this repository or its results, please cite as:
+
+> Moreno-Hernández, J. A.; De la Portilla-Reynoso, M.; Moreno-Hernández, R.C. (2025). *A Real-Time Probabilistic Direct Multi-Horizon LSTM Framework for Operational Crude Oil Price Forecasting* Instituto Politécnico Nacional (IPN).
+
+---
+
+## 👥 Acknowledgments
+With academic supervision by:  
+- **Dr. José Alfredo Jiménez-Bernal**, ESIME-IPN  
+- **Dr. Didier Samayoa-Ochoa**, ESIME-IPN
+- **Dra. Claudia del Carmen Gutiérrez-Torres**, ESIME-IPN
