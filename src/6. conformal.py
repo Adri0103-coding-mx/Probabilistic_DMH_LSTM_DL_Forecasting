@@ -7,7 +7,45 @@ from .helpers import (
     cobertura_por_horizonte,
     _flatten_by_date,
 )
+import numpy as np
 
+try:
+    from arch import arch_model
+    _ARCH_AVAILABLE = True
+except ImportError:
+    _ARCH_AVAILABLE = False
+
+
+def _fit_garch_hstep(residuals):
+    """
+    Ajusta un GARCH(1,1) a una serie de residuales y retorna
+    la volatilidad condicional (1-step ahead).
+    """
+    if not _ARCH_AVAILABLE or len(residuals) < 50:
+        return np.std(residuals)
+
+    model = arch_model(
+        residuals,
+        vol="Garch",
+        p=1,
+        q=1,
+        mean="Zero",
+        rescale=True,
+    )
+
+    res = model.fit(disp="off")
+    return np.sqrt(res.forecast(horizon=1).variance.values[-1, 0])
+
+
+def generar_sigma_multi_desde_backtesting(residuos_por_horizonte):
+    """
+    residuos_por_horizonte: dict {h: np.array}
+    retorna: dict {h: sigma_h}
+    """
+    sigmas = {}
+    for h, residuos in residuos_por_horizonte.items():
+        sigmas[h] = _fit_garch_hstep(np.asarray(residuos))
+    return sigmas
 def conformal_en_backtesting_split(
     backtesting_result: dict,
     series_original: pd.DataFrame,
