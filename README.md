@@ -36,7 +36,7 @@ Instituto Politécnico Nacional (IPN), Mexico City.
 ## 📚 Citation
 If you use this repository or its results, please cite as:
 
-> Moreno-Hernández, J. A.; De la Portilla-Reynoso, M.; Moreno-Hernández, R.C. (2025). *A Real-Time Probabilistic Direct Multi-Horizon LSTM Framework for Operational Crude Oil Price Forecasting* Instituto Politécnico Nacional (IPN).
+> Moreno-Hernández, J. A.; De la Portilla-Reynoso, M.; Moreno-Hernández, R.C. (2025). *A Real-Time Probabilistic Direct Multi-Horizon LSTM Framework for Operational Crude Oil Price Forecasting*, Instituto Politécnico Nacional (IPN).
 
 ---
 
